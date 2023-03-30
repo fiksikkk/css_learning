@@ -1,0 +1,38 @@
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: rebeccapurple;
+}
+
+.box {
+  background: lightblue;
+}
+
+#user {
+  color: yellow;
+}
+
+.div.h1 {
+  background: orange;
+}
+
+.div div {
+  background: palegoldenrod;
+}
+
+h1 + p {
+  background: red;
+}
+
+h1 ~ div {
+  background: black;
+}
+h1 ~ * ~ p {
+  background-color: darkblue;
+}
