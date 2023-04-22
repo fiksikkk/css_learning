@@ -1,0 +1,59 @@
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+.card-dark {
+  background: #ededed;
+}
+
+.input-dark {
+  background: #8b8888;
+}
+
+.input-dark[required] {
+  background: #ee1e1e;
+}
+
+.input-dark[type='number'] {
+  background: rgb(136, 240, 104);
+}
+
+.small-img[alt~='small'] {
+  height: 500px;
+}
+
+button[class|='btn'] {
+  background: green;
+}
+
+a[class^='btn'] {
+  background: red;
+}
+
+a[class*='secondary'] {
+  color: blue;
+}
+
+.btn::first-letter {
+  color: green;
+}
+
+.big-text::first-line {
+  background-color: #ee1e1e;
+}
+
+.input-dark::placeholder {
+  color: green;
+  background: blue;
+}
+
+.big-text::before,
+.big-text::after {
+  content: '$$$';
+  color: green;
+  background-color: #ee1e1e;
+}

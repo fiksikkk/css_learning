@@ -1,0 +1,80 @@
+#test:target {
+  color: red;
+}
+
+.link:link {
+  color: red;
+}
+
+.link:hover {
+  color: green;
+}
+
+.link:active {
+  color: purple;
+}
+
+input {
+  background-color: gray;
+}
+
+input:focus {
+  background-color: red;
+}
+
+.card:focus-within {
+  background-color: red;
+}
+
+.card:lang(fr) > span::after {
+  content: '(fr)';
+}
+
+button:enabled {
+  background-color: #008000;
+}
+
+button:disabled {
+  background-color: burlywood;
+}
+
+.inp:read-write {
+  background-color: blue;
+}
+
+.inp:read-only {
+  background-color: darkgray;
+}
+
+input[type='checkbox']:checked ~ span {
+  background-color: #008000;
+}
+
+.valid:valid {
+  background-color: yellow;
+}
+
+.valid:invalid {
+  color: wheat;
+  background-color: black;
+}
+
+.valid:optional {
+  background-color: green;
+}
+
+.number-input:focus {
+  background-color: gray;
+}
+
+.number-input:out-of-range {
+  background-color: red;
+}
+
+.number-input:in-range {
+  background-color: green;
+}
+
+.valid:placeholder-shown ~ span {
+  background-color: pink;
+}

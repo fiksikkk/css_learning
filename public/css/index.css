@@ -6,76 +6,7 @@ body {
   background: #fff;
 }
 
-* {
-  color: rebeccapurple;
-}
-
-.box {
-  background: lightblue;
-}
-
-#user {
-  color: yellow;
-}
-
-.div.h1 {
-  background: orange;
-}
-
-.div div {
-  background: palegoldenrod;
-}
-
-h1 + p {
-  background: red;
-}
-
-h1 ~ div {
-  background: black;
-}
-h1 ~ * ~ p {
-  background-color: darkblue;
-}
-
-.card-dark {
-  background-color: gainsboro;
-}
-
 .item {
-  color: greenyellow;
-  font-weight: 1000;
-}
-
-.item:first-child {
   color: aqua;
-}
-
-.item:only-child {
-  color: antiquewhite;
-}
-
-.item2:first-of-type {
-  color: red;
-}
-.item2:last-of-type {
-  color: pink;
-}
-.item2:only-of-type {
-  color: greenyellow;
-}
-.item2:nth-child(3n + 1) {
-  background-color: thistle;
-}
-.item2:nth-last-child(3) {
-  background-color: thistle;
-}
-.item2:nth-of-type(3) {
-  background-color: aqua;
-}
-.item2:not(div) {
-  background-color: yellow;
-}
-.card div:empty {
-  height: 10px;
-  background-color: red;
+  font-size: xx-large;
 }
