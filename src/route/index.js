@@ -29,6 +29,18 @@ router.get('/selectors4', function (req, res) {
   })
 })
 
+router.get('/text', function (req, res) {
+  res.render('text', {
+    stylesPath: 'css/text.css',
+  })
+})
+
+router.get('/font', function (req, res) {
+  res.render('font', {
+    stylesPath: 'css/font.css',
+  })
+})
+
 // ================================================================
 
 // Підключаємо роутер до бек-енду

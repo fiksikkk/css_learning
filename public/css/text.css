@@ -1,0 +1,36 @@
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+.item {
+  color: aqua;
+  font-size: xx-large;
+}
+
+p:hover {
+  direction: rtl;
+}
+
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+  /* writing-mode: vertical-lr; */
+  text-align: justify;
+}
+
+span {
+  text-align: left;
+  text-transform: uppercase;
+
+  letter-spacing: 0.5em;
+  text-decoration: underline wavy red;
+}
+
+pre {
+  tab-size: 10;
+}

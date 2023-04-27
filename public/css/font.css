@@ -1,0 +1,38 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  /* font-family: cursive; */
+  font-size: 20px;
+  font-display: swap;
+}
+
+p {
+  font-size: xx-large;
+  font-weight: 900;
+  font-style: oblique;
+}
+
+.text {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+  margin: 10px;
+  background-color: gray;
+}
+
+.box {
+  background-color: gray;
+  padding: 50px;
+}
+
+.block {
+  display: block;
+  background-color: lightgray;
+  width: 100%;
+  /* width: max-content; */
+  padding: 100px;
+  min-height: 50px;
+  margin: auto;
+  box-sizing: content-box;
+}
