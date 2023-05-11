@@ -73,8 +73,8 @@
   margin: 0 auto;
 }
 
-.plans {
-}
+/* .plans {
+} */
 
 .plans_card:not(:last-of-type) {
   margin-right: 24px;
@@ -174,3 +174,27 @@ h1 {
   resize: horizontal;
 } 
 */
+
+/* BACKGROUND */
+/* .page {
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(127, 106, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-image: url('/img/test2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+/* .hero_text {
+  padding: 40px;
+  color: rgb(14, 252, 14);
+  border-image-source: url('/img/test2.jpg');
+  border-image-width: 20% 10%;
+  border-image-slice: 20% 10%;
+} */
+
+/* //BACKGROUND */

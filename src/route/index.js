@@ -401,6 +401,83 @@ router.get('/template-2', function (req, res) {
     ],
   })
 })
+
+router.get('/tables', function (req, res) {
+  res.render('tables', {
+    stylesPath: 'css/tables.css',
+    info: [
+      'first element',
+      'second element',
+      'third element',
+      'fourth element',
+      'fifth element',
+      'sixth element',
+      'seventh element',
+      'eighths element',
+    ],
+    footer: [
+      {
+        title: 'Features',
+        links: [
+          {
+            text: 'Cool stuff',
+            url: 'https://example.com/cool-stuff',
+          },
+          {
+            text: 'Random feature',
+            url: 'https://example.com/random-feature',
+          },
+          {
+            text: 'Team feature',
+            url: 'https://example.com/team-feature',
+          },
+          {
+            text: 'Stuff for developers',
+            url: 'https://example.com/stuff-for-developers',
+          },
+        ],
+      },
+      {
+        title: 'Resources',
+        links: [
+          {
+            text: 'Resource name',
+            url: 'https://example.com/resource-name',
+          },
+          {
+            text: 'Another resource',
+            url: 'https://example.com/another-resource',
+          },
+          {
+            text: 'Final resource',
+            url: 'https://example.com/final-resource',
+          },
+        ],
+      },
+      {
+        title: 'About',
+        links: [
+          {
+            text: 'Team',
+            url: 'https://example.com/team',
+          },
+          {
+            text: 'Locations',
+            url: 'https://example.com/locations',
+          },
+          {
+            text: 'Privacy',
+            url: 'https://example.com/privacy',
+          },
+          {
+            text: 'Terms',
+            url: 'https://example.com/terms',
+          },
+        ],
+      },
+    ],
+  })
+})
 // ================================================================
 
 // Підключаємо роутер до бек-енду

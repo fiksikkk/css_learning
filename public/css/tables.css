@@ -1,0 +1,53 @@
+:root {
+  --green: #5cf74e;
+}
+
+.box {
+  margin: 50px 30px;
+  background-color: rgba(128, 128, 128, 0.199);
+}
+
+.ul {
+  padding: 0;
+  list-style-type: circle;
+  list-style-position: inside;
+  list-style-image: linear-gradient(
+    to bottom right,
+    blue,
+    red
+  );
+}
+
+/* .table tr {
+  border: 1px solid #343a40;
+} */
+
+.table tr td {
+  border: 1px solid #9ca4ac;
+  border-bottom-color: red;
+  border-right-color: blue;
+}
+
+.table tr td::before {
+  content: open-quote;
+}
+.table tr td::after {
+  content: close-quote;
+}
+
+.table {
+  table-layout: auto;
+  width: 200px;
+  border-collapse: unset;
+  border-spacing: 10px 20px;
+  caption-side: top;
+  empty-cells: hide;
+}
+
+.table tr td:hover {
+  opacity: 50%;
+}
+
+caption {
+  background-color: var(--green, white);
+}

@@ -1,0 +1,25 @@
+<div class="box">
+    <ul class="ul">
+        {{#each info}}
+        <li class="li">{{this}}</li>
+        {{/each}}
+    </ul>
+</div>
+<div class="box">
+    <div>
+        <table class="table">
+            <caption>My table</caption>
+            <tbody>
+                {{#each footer}}
+                <tr>
+                    {{!-- <th>{{title}}</th> --}}
+                    {{#each links}}
+                    <td>{{text}}</td>
+                    {{/each}}
+                    <td></td>
+                </tr>
+
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
