@@ -1172,6 +1172,16 @@ router.get('/slack', function (req, res) {
     },
   })
 })
+
+router.get('/dashboard', function (req, res) {
+  res.render('dashboard', {
+    layout: null,
+    stylesPath: 'css/dashboard.css',
+    page: {
+      title: 'Dashboard',
+    },
+  })
+})
 // ================================================================
 
 // Підключаємо роутер до бек-енду
