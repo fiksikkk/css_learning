@@ -179,6 +179,10 @@ body {
     width: 100%;
     background-color: var(--color-light);
   }
+
+  .payment {
+    min-width: 360px;
+  }
 }
 
 @layer element {
@@ -360,7 +364,6 @@ body {
   }
 
   .field--payment {
-    max-width: 189px;
     width: 100%;
   }
 
@@ -433,6 +436,30 @@ body {
 }
 
 @layer adaptive {
+  @media all and (width <= 1265px) {
+    .page--dashboard {
+      grid-template-columns: 1fr 5fr;
+    }
+
+    .layout--grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .analytic__block {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    .purchase {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-7);
+    }
+
+    .header__search {
+      max-width: 40%;
+    }
+  }
+
   @media all and (width <= 1000px) {
     .page--dashboard {
       grid-template-columns: 1fr;
@@ -443,6 +470,86 @@ body {
     }
 
     .header {
+      display: none;
+    }
+  }
+
+  @media all and (width <= 800px) {
+    .analytic--double {
+      grid-row: auto;
+      grid-column: 1 / 3;
+    }
+    .layout--grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    .analytic__block {
+      grid-column: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.5fr 1.5fr 1fr;
+    }
+
+    .purchase {
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--spacing-4);
+    }
+  }
+
+  @media all and (width <= 800px) {
+    .purchase {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-7);
+    }
+  }
+
+  @media all and (width <= 600px) {
+    .main {
+      padding: var(--spacing-5);
+    }
+
+    .analytic__block {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.5fr 1.5fr 1fr 1fr;
+    }
+
+    .analytic--double {
+      grid-column: auto;
+    }
+  }
+
+  @media all and (width <= 460px) {
+    .main {
+      padding: var(--spacing-2);
+    }
+
+    .purchase {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-4);
+    }
+
+    .purchase > .vertical--small {
+      grid-template-columns: max-content max-content;
+    }
+
+    .payment {
+      min-width: 200px;
+    }
+
+    .payment > .horizontal--2 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media all and (width <= 300px) {
+    .analytic__block {
+      grid-template-rows: auto;
+    }
+    .purchase > .vertical--small {
+      grid-template-columns: 1fr;
+    }
+
+    .analytic__button {
       display: none;
     }
   }
